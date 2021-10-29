@@ -1,0 +1,28 @@
+﻿<Window x:Class="GraphicsEx.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicsEx"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid>
+        <Rectangle Height="50" Width="100"
+                       Stroke="Black" StrokeThickness="2"
+                       Fill="#ffff00"
+                       HorizontalAlignment="Left"
+                       RadiusX="50" RadiusY="10" VerticalAlignment="Top" 
+                       />
+        <Ellipse Height="20" Width="100"
+                     Stroke="Black" StrokeThickness="2"
+                     Fill="#ffff00"
+                     HorizontalAlignment="Left" VerticalAlignment="Top"
+                     />
+        <!--<StackPanel Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Center">-->
+        <Ellipse Height="50" Width="100"
+                     Stroke="Black" StrokeThickness="2"
+                     Fill="#ff0000"
+                     HorizontalAlignment="Left" VerticalAlignment="Top" Margin="2,59,0,0"
+                     />
+    </Grid>
+</Window>
