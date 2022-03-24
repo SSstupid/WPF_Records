@@ -1,0 +1,16 @@
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\bin\Debug\NewStartTreeViews.exe.config
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\bin\Debug\NewStartTreeViews.exe
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\bin\Debug\NewStartTreeViews.pdb
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.csproj.AssemblyReference.cache
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\MainWindow.g.cs
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\App.g.cs
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews_MarkupCompile.cache
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews_MarkupCompile.lref
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\MainWindow.baml
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.g.resources
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.Properties.Resources.resources
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.csproj.GenerateResource.cache
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.csproj.CoreCompileInputs.cache
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.exe
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.pdb
+C:\Users\rlawo\source\repos\NewStartTreeViews\NewStartTreeViews\obj\Debug\NewStartTreeViews.csproj.Fody.CopyLocal.cache
