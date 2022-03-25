@@ -1,0 +1,25 @@
+﻿<Window x:Class="Fasetto.word.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fasetto.word"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow"
+        AllowsTransparency="False"
+        Title="MainWindow" Height="450" Width="800">
+    
+    <Window.Resources>
+        <FontFamily x:Key="test.Window.xaml" >/Fonts/#Lato Bold</FontFamily>
+    </Window.Resources>
+
+    <StackPanel>
+        <TextBlock Text="Welcom, friend!" FontSize="48"/>
+        <TextBlock Text="Welcom, friend!" FontFamily="{StaticResource LatoThin}" FontSize="48"/>
+        <TextBlock Text="Welcom, friend!" FontFamily="{StaticResource LatoRegular}" FontSize="48"/>
+        <TextBlock  Text="Welcom, friend!" FontFamily="{StaticResource test.App.xaml}" FontSize="48"/>
+        <TextBlock  Text="Welcom, friend!" FontFamily="{StaticResource test.Window.xaml}" FontSize="48"/>
+        <TextBlock  Text="Welcom, friend!" FontFamily="{StaticResource LatoBold}" FontSize="48"/>
+        <TextBlock Text="Welcom, friend!" FontFamily="./Fonts/#Lato Bold" FontSize="48"/>
+    </StackPanel>
+</Window>
