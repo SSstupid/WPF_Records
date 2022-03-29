@@ -234,3 +234,5 @@ Style을 참조하여 글꼴을 불러올 수 있습니다.
 <br />
 -----------------
 ![스크린샷2](https://user-images.githubusercontent.com/90036120/160582218-71a0516f-7245-4873-9131-ce5547fd5226.JPG)  
+
+참조 : https://docs.microsoft.com/ko-kr/dotnet/desktop/wpf/advanced/packaging-fonts-with-applications?view=netframeworkdesktop-4.8#introduction-to-packaging-fonts
