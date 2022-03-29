@@ -89,6 +89,7 @@ myTextBlock.FontFamily = new FontFamily(new Uri("pack://application:,,,/"), "./R
 ## 애플리케이션의 글꼴 열거
 * .NET Framework 4.8까지 지원하지만 .NET 6.0에서도 돌아갑니다.   
 ```
+(MainWindow.xaml.cs)
 System.Collections.Generic.ICollection<FontFamily> fontFamilies = Fonts.GetFontFamilies(new Uri("pack://application:,,,/Resource/#"));
 
 foreach (FontFamily fontFamily in fontFamilies)
@@ -100,7 +101,7 @@ foreach (FontFamily fontFamily in fontFamilies)
 
 ![글꼴리스트](https://user-images.githubusercontent.com/90036120/160578650-36870500-96b1-4b73-9426-de817c87f9c4.JPG)   
 
-(MainWindow.xaml.cs) 지정된 경로에 있는 모든 글꼴을 리스트 아이템에 추가 할 수 있다.  
+ 지정된 경로에 있는 모든 글꼴을 리스트 아이템에 추가 할 수 있다. (다양한 방식으로 이용하능 할 것 같습니다.
 <br /> 
 
 *  Typeface 개체의 컬렉션 반환.
