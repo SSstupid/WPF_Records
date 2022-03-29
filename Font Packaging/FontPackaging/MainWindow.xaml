@@ -1,0 +1,79 @@
+﻿<Window x:Class="FontPackaging.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FontPackaging"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="800" Width="530">
+
+    <Window.Resources>
+        <!-- 폰트경로 설정 3가지 -->
+        <FontFamily x:Key="Windowxaml1" >/Fonts/#가비아 솔미체</FontFamily>
+        <FontFamily x:Key="Windowxaml2" >#가비아 솔미체</FontFamily>
+        <FontFamily x:Key="Windowxaml3" >가비아 솔미체</FontFamily>
+
+        <!-- 폰트경로 숨기기-->
+        <FontFamily x:Key="Windowxaml4" >Lato Thin ltaic</FontFamily> 
+    </Window.Resources>
+    
+    <ScrollViewer>
+
+        <StackPanel>
+            <!-- 디렉토리 복사 X -->
+            <TextBlock FontFamily="Lato Black" Text="디렉토리 복사 X" FontSize="22" Margin="0,10,0,0"/>
+            <Label>----------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 글꼴 참조 예제 1 ~ 3 -->
+            <TextBlock FontFamily="./Fonts/#Vanisha" Text="Ex) 1" FontSize="22" />
+            <TextBlock FontFamily="#Vanisha" Text="Ex) 2" FontSize="22" />
+            <TextBlock FontFamily="Vanisha" Text="Ex) 3" FontSize="22" />
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!--리소스로 참조 from .csproj -->
+            <TextBlock FontFamily="orange juice" Text="Referencing Resource / 리소스 참조" FontSize="22" Margin="0,10,0,10"/>
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 코드에서 참조 -->
+            <TextBlock x:Name="myTextBlock" Text="코드에서 참조" FontSize="22" Margin="0,10,0,20"/>
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 리소스 참조 2가지 방식 from window.xmal, App.xmal -->
+            <TextBlock FontFamily="{StaticResource Windowxaml1}" Text="Window.xaml Resource / Window 리소스 참조" FontSize="22" />
+            <TextBlock FontFamily="{StaticResource AppXaml}" Text="App.xaml Resource / App 리소스 참조" FontSize="22" />
+            <TextBlock FontFamily="{StaticResource FontXaml1}" Text="Font.xaml ResourceDictionary / 리소스 사전 참조" FontSize="22" Margin="0,15,0,0"/>
+            <!-- 디버깅시 적용안됨 -->
+            <TextBlock FontFamily="{StaticResource FontXaml2}" Text="Font.xaml ResourceDictionary / 리소스 사전 참조" FontSize="22" />
+            <TextBlock FontFamily="{StaticResource FontXaml3}" Text="Font.xaml ResourceDictionary / 리소스 사전 참조" FontSize="22" />
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 스타일 참조 from app -->
+            <TextBlock Style="{StaticResource AppStyle}" Text="AppStyle ResourceDictionary / App 스타일 참조" FontSize="22" Margin="0,15,0,10"/>
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 라이브 어셈블리 참조 실패 -->
+            <TextBlock FontFamily="/FontLibrary;Component/#가비아 솔미체" Text="라이브러리 어셈블 ??" FontSize="22" Margin="0,10,0,10"/>
+
+            <!-- 폰트경로 숨기기 -->
+            <TextBlock FontFamily="{StaticResource Windowxaml4}" Text="폰트경로 간소화 abcd1234" FontSize="22" />
+
+            <Label>---------------------------------------------------------------------------------------------------------</Label>
+
+            <!-- 글꼴 열거 -->
+            <ListView x:Name="FontList" Height="103" Width="151" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,10,0,10" HorizontalAlignment="Left">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            
+        </StackPanel>
+    </ScrollViewer>
+</Window>

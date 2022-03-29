@@ -1,0 +1,23 @@
+﻿<Application x:Class="FontPackaging.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:FontPackaging"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!-- 스타일 추가 -->
+            <Style x:Key="AppStyle" TargetType="{x:Type TextBlock}">
+                <Setter Property="FontFamily" Value="Fonts/napBlock.ttf #NapjakBlock" />
+            </Style>
+
+            <!-- App.xaml에 글꼴 추가 -->
+            <FontFamily x:Key="AppXaml">/Resource/#orange juice </FontFamily>
+
+            <!-- ResourceDictionary 참조 -->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="./Style/Font.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

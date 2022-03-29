@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<AssemblyName>FontLibrary</AssemblyName>
+		<OutputType>library</OutputType>	
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Resource Include="./Fonts/gabia-solmee.ttf" />
+	</ItemGroup>
+	
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resource\Vanisha.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="Pages\Page1.xaml" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<Content Include="Lato-Black.ttf" /> <!-- Add font, Not copy to... -->
+		<Content Include="./Fonts/Vanisha.ttf">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> <!-- copy fonts to the deployment directory. -->
+		</Content>
+		
+		<Content Include="Resource/napBlock.ttf">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 
+		</Content>
+		<Content Include="Resource/Vanisha.ttf">
+		  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</Content>
+		<EmbeddedResource Include="Pages\Page1.xaml">
+		  <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+		</EmbeddedResource>
+		<PackageReference Include="Xamarin.Forms" Version="5.0.0.2337" />
+		
+		<Resource Include="Resource/orange-juice.ttf" /> <!-- 리소스로 추가 -->
+		<Resource Include="Resource/Athletic-Outfit.ttf" /> <!-- 리소스로 추가 -->
+	</ItemGroup>
+	
+
+</Project>
