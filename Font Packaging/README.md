@@ -5,22 +5,11 @@
 
 
  ## 컨텐츠
-- [소스특징](#소스특징)
 - [개발정보](#개발정보)
 - [프로젝트 구조](#프로젝트-구조)
 - [개요](#개요)
+- [소스목차](#소스특징)
 - [스크린샷](#스크린샷)             
-<br />
-
-# 소스특징  
-* 글꼴 패키징     
-  * 콘텐츠 항목으로 글꼴 추가
-  * 리소스 항목으로 글꼴 추가
-  * 코드에서 글꼴 리소스 항목 참조
-* 애플리케이션의 글꼴 열거
-* 글꼴 리소스 라이브러리
-* 글꼴 연구진행과정
-* 디자이너 오류
 <br />
 
 # 개발정보
@@ -38,6 +27,17 @@
   * Font.xaml
 * App.xaml
 * .csproj
+<br />
+
+# 소스목차  
+* 글꼴 패키징     
+  * 콘텐츠 항목으로 글꼴 추가
+  * 리소스 항목으로 글꼴 추가
+  * 코드에서 글꼴 리소스 항목 참조
+* 애플리케이션의 글꼴 열거
+* 글꼴 리소스 라이브러리
+* 글꼴 연구진행과정
+* 디자이너 오류
 <br />
 
 # 개요
@@ -72,8 +72,8 @@
 <br />
 
 ```
-<TextBlock FontFamily="./Fonts/#Vanisha" Text="Vanisha" />     <!-- 콘텐츠 참조-->
-<TextBlock FontFamily="./Resource/#orange juice Text="orange juice" /> <!-- 리소스 참조 -->
+<TextBlock FontFamily="./Fonts/#Vanisha" Text="Vanisha" />     <!-- 콘텐츠로 참조-->
+<TextBlock FontFamily="./Resource/#orange juice Text="orange juice" /> <!-- 리소스로 참조 -->
 ```
 MainWoindow.xaml에 위의 소스를 사용하여 글꼴을 참조한다.  
 <br /> 
@@ -97,6 +97,7 @@ foreach (FontFamily fontFamily in fontFamilies)
     ListView.Items.Add(familyName[familyName.Length - 1]); // 리스트아이템 추가
 }
 ```   
+
 ![글꼴리스트](https://user-images.githubusercontent.com/90036120/160578650-36870500-96b1-4b73-9426-de817c87f9c4.JPG)   
 
 (MainWindow.xaml.cs) 지정된 경로에 있는 모든 글꼴을 리스트 아이템에 추가 할 수 있다.  
@@ -106,6 +107,7 @@ foreach (FontFamily fontFamily in fontFamilies)
 ```
 foreach (Typeface typeface in Fonts.GetTypefaces(new Uri("pack://application:,,,/Resource/#"))) //(new Uri("글꼴 경로")
  {
+   //예제파일 <TextBlock x:Name="myTextBlock" Text="코드에서 참조" FontSize="22" Margin="0,10,0,20"/>에서 확인 하실 수 있습니다.
  }
 ```  
 <br /> 
@@ -156,7 +158,8 @@ Ex) "./Resource/#Vanisha" => "#Vanisha" => "Vanisha"
 이것을 이용하여 테스트를 해봅니다.  
 => 암시적 표현 테스트   
 ![Hide](https://user-images.githubusercontent.com/90036120/160573820-5484ca28-cdd0-4a76-980e-5f43b22992d9.JPG)
-글꼴 위치를 폴더로 싸서 숨깁니다.    
+글꼴 위치를 폴더로 싸서 숨깁니다.  
+
 ```
 <!-- MainWindow.xaml -->
 <Window.Resources>
@@ -194,7 +197,8 @@ MainWindow.xaml에 글꼴을 추가합니다.
 ```
 <TextBlock FontFamily="{StaticResource Windowxaml1}" Text="Wiondow.xaml Resource / Window 리소스 참조" />
 <TextBlock FontFamily="{StaticResource AppXaml}" Text="App.xaml Resource / App 리소스 참조" />
-```
+```   
+<br />
 
 * Style에 글꼴 추가, 참조
 ```
@@ -221,14 +225,9 @@ Style을 참조하여 글꼴을 불러올 수 있습니다.
 ```
 <Resource Include="Resource/How Lovely.ttf" />
 ```
-여기서 재미있는건 예외로 <Window.Resources>로 글꼴 추가 시 등등의 경우는 오류가 나지 않습니다.   
-
-# 스크린샷
-<img src=https://user-images.githubusercontent.com/90036120/159855380-1c357214-b05f-449a-a43d-4ceaa9a1fcee.JPG width="750" height="400"/>.
+여기서 재미있는건 예외로 <Window.Resources>로 글꼴 추가 시 등등의 경우는 오류가 나지 않습니다.    
 <br />
 
-
-
-
-
-
+# 스크린샷
+![스크린샷1](https://user-images.githubusercontent.com/90036120/160582203-bdfe9fb9-1c91-4c92-93d6-b179037b0c21.JPG)  
+![스크린샷2](https://user-images.githubusercontent.com/90036120/160582218-71a0516f-7245-4873-9131-ce5547fd5226.JPG)  
