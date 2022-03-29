@@ -155,9 +155,10 @@ App.xaml을 통해 추가한 리소스 사전을 참조합니다.
 ```
 글꼴 참조시 경로를 명시적, 암시적으로 모두 표현가능 합니다.
 Ex) "./Resource/#Vanisha" => "#Vanisha" => "Vanisha"   
+    
 이것을 이용하여 테스트를 해봅니다.  
 => 암시적 표현 테스트   
-![Hide](https://user-images.githubusercontent.com/90036120/160573820-5484ca28-cdd0-4a76-980e-5f43b22992d9.JPG)
+![Hide](https://user-images.githubusercontent.com/90036120/160573820-5484ca28-cdd0-4a76-980e-5f43b22992d9.JPG)     
 글꼴 위치를 폴더로 싸서 숨깁니다.  
 
 ```
@@ -231,4 +232,5 @@ Style을 참조하여 글꼴을 불러올 수 있습니다.
 # 스크린샷
 ![스크린샷1](https://user-images.githubusercontent.com/90036120/160582203-bdfe9fb9-1c91-4c92-93d6-b179037b0c21.JPG)    
 <br />
+-----------------
 ![스크린샷2](https://user-images.githubusercontent.com/90036120/160582218-71a0516f-7245-4873-9131-ce5547fd5226.JPG)  
