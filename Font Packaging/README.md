@@ -7,8 +7,8 @@
  ## 컨텐츠
 - [개발정보](#개발정보)
 - [프로젝트 구조](#프로젝트-구조)
+- [소스목차](#소스목차)
 - [개요](#개요)
-- [소스목차](#소스특징)
 - [스크린샷](#스크린샷)             
 <br />
 
@@ -229,5 +229,6 @@ Style을 참조하여 글꼴을 불러올 수 있습니다.
 <br />
 
 # 스크린샷
-![스크린샷1](https://user-images.githubusercontent.com/90036120/160582203-bdfe9fb9-1c91-4c92-93d6-b179037b0c21.JPG)  
+![스크린샷1](https://user-images.githubusercontent.com/90036120/160582203-bdfe9fb9-1c91-4c92-93d6-b179037b0c21.JPG)    
+<br />
 ![스크린샷2](https://user-images.githubusercontent.com/90036120/160582218-71a0516f-7245-4873-9131-ce5547fd5226.JPG)  
