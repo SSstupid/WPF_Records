@@ -64,11 +64,11 @@
 ```
 <ItemGroup>
   <Content Include="./Fonts/Vanisha.ttf">
-     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 
+     <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> <!-- 배포 디렉토리에 복사 -->
   </Content>
 </ItemGroup>
 ```
-<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> 문을 추가하여 배포 디렉토리에 복사 할 수있다.  
+ "<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory> "문을 추가하여 배포 디렉토리에 복사 할 수있다.  
 <br />
 
 ```
