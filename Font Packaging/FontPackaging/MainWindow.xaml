@@ -21,6 +21,16 @@
     <ScrollViewer>
 
         <StackPanel>
+
+            <!-- 글꼴 리소스 라이브러리 만들기 테스트 -->
+            <TextBlock>
+                 <Run FontFamily="/FontLibrary;Component/#Vanisha" FontSize="36" >ABCDEFGHIJKLMNOPQRSTUVWXYZ</Run> <!-- 적용 안됨 -->
+            </TextBlock> 
+            
+            <TextBlock>
+                 <Run FontFamily="/FontLibrary;Component/Fonts/#Vanisha" FontSize="36" >ABCDEFGHIJKLMNOPQRSTUVWXYZ</Run> <!-- 적용됨 => 조금 더 자세한 경로 필요-->
+            </TextBlock>
+            
             <!-- 디렉토리 복사 X -->
             <TextBlock FontFamily="Lato Black" Text="디렉토리 복사 X" FontSize="22" Margin="0,10,0,0"/>
             <Label>----------------------------------------------------------------------------------------------------</Label>

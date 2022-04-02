@@ -7,7 +7,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<Resource Include="./Fonts/gabia-solmee.ttf" />
+		<Resource Include="./Fonts/Vanisha.ttf" />
 	</ItemGroup>
 	<!-- 폰트라이브러리 어셈블 만들기????-->
 	
