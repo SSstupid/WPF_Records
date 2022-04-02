@@ -231,6 +231,32 @@ Style을 참조하여 글꼴을 불러올 수 있습니다.
 여기서 재미있는건 예외로 <Window.Resources>로 글꼴 추가 시 등등의 경우는 오류가 나지 않습니다.    
 <br />
 
+* '글꼴 리소스 라이브러리 만들기' 테스트
+```
+<!-- .csproj -->
+<PropertyGroup>  
+  <AssemblyName>FontLibrary</AssemblyName>  <!-- Library이름 설정 -->
+  <OutputType>library</OutputType>  
+  ...  
+</PropertyGroup>  
+...
+<ItemGroup>  
+  <Resource Include="Vanisha.ttf" />  
+  <Resource Include="Pesca.ttf" />  
+</ItemGroup>
+```
+```
+<!-- MainWindow.xaml -->
+<TextBlock>
+  <Run FontFamily="/FontLibrary;Component/Fonts/#Vanisha" FontSize="36" >ABCDEFGHIJKLMNOPQRSTUVWXYZ</Run>
+</TextBlock>
+```
+주의점은 폰트 경로설정시 Component뒤에 폰트가 포함된 폴더까지 같이 설정해주셔야 합니다.   
+Ex) ~~Component/#Vanisha~~ // **글꼴 적용 안됨**   
+Ex) Component/Fonts/#Vanisha //글꼴 적용됨    
+   
+<br />
+
 # 스크린샷
 ![스크린샷1](https://user-images.githubusercontent.com/90036120/160582203-bdfe9fb9-1c91-4c92-93d6-b179037b0c21.JPG)    
 <br />
