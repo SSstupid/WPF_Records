@@ -9,7 +9,7 @@
 
     <Border Background="{StaticResource WordBlueBrush}" >
         <Grid>
-            <Grid.Background > <!-- Move to the MainWindow.xmal -->
+            <Grid.Background >
                 <ImageBrush TileMode="Tile" ViewportUnits="Absolute" Viewport="0 0 500 500" ImageSource="/Images/Backgrounds/emoji-background.png" />
             </Grid.Background>
 
