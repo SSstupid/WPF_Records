@@ -1,0 +1,65 @@
+﻿<local:BasePage x:TypeArguments="local:LoginViewModel" x:Class="Fasetto.word.Framework.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Fasetto.word.Framework"
+      mc:Ignorable="d" 
+      x:Name="Page"
+      d:DesignHeight="700" d:DesignWidth="700"
+      Title="LoginPage">
+
+    <Border>
+        <Grid>
+            <!-- Main content scroll -->
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" >
+                <StackPanel
+                    VerticalAlignment="Center" 
+                    HorizontalAlignment="Center"
+                    TextBlock.TextAlignment="Center">
+
+                    <!-- Login main content white box -->
+                    <Border Background="{StaticResource BackgroundLightBrush}" 
+                            CornerRadius="10"
+                            Padding="15 50 15 15"
+                            Width="400"
+                            Margin="50 50 50 0">
+
+                        <StackPanel >
+                            <!-- Sign Up Header -->
+                            <TextBlock Text="Sign In" 
+                                       FontFamily="{StaticResource LatoRegular}"
+                                       FontSize="{StaticResource FontSizeRegular}"
+                                       Foreground="{StaticResource WordBlueBrush}" />
+
+                            <!-- Sign up subtext-->
+                            <TextBlock Text="It`s about to get fun"
+                                   FontSize="{StaticResource FontSizeRegular}"
+                                   Foreground="{StaticResource ForegroundDarkBrush}" 
+                                   Margin="0 0 0 20"    
+                                       />
+
+                            <!-- Email -->
+                            <TextBox Style="{StaticResource TextBoxID}" Text="{Binding Email}" Tag="Email" />
+
+                            <!-- Password -->
+                            <PasswordBox x:Name="PasswordText" Style="{StaticResource PasswordBoxPwd}" Tag="Password" Margin="0 0 0 30"/>
+
+                            <!-- Next button -->
+                            <Button Style="{StaticResource LoginButton1}"
+                                    Content="Login"
+                                    local:IsBusyProperty.Value="{Binding LoginIsRunning}"
+                                    Command="{Binding LoginCommand}" 
+                                    CommandParameter="{Binding ElementName=Page}"
+                                    HorizontalAlignment="Center" />
+
+                        </StackPanel>
+                    </Border>
+
+                    <Button Style="{StaticResource TextButton}" Content="I already have an account" HorizontalAlignment="Center" />
+                </StackPanel>
+            </ScrollViewer>
+
+        </Grid>
+    </Border>
+</local:BasePage>
