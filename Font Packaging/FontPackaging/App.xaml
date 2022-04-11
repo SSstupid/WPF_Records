@@ -12,7 +12,7 @@
             </Style>
 
             <!-- App.xaml에 글꼴 추가 -->
-            <FontFamily x:Key="AppXaml">/Resource/#orange juice </FontFamily>
+            <FontFamily x:Key="AppXaml">/Resource/#orange juice</FontFamily>
 
             <!-- ResourceDictionary 참조 -->
             <ResourceDictionary.MergedDictionaries>

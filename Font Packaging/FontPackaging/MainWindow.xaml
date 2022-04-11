@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:FontPackaging"
         mc:Ignorable="d"
         Loaded="Window_Loaded"
+        MinHeight="400"
         Title="MainWindow" Height="800" Width="530">
 
     <Window.Resources>
