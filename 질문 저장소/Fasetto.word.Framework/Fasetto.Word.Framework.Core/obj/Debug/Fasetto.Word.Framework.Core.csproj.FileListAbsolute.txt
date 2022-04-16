@@ -1,0 +1,12 @@
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Fasetto.Word.Framework.Core.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Fasetto.Word.Framework.Core.pdb
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.csproj.AssemblyReference.cache
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.csproj.CoreCompileInputs.cache
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.pdb
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Newtonsoft.Json.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Newtonsoft.Json.xml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.csproj.Fody.CopyLocal.cache
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\obj\Debug\Fasetto.Word.Framework.Core.csproj.CopyComplete
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Ninject.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.Word.Framework.Core\bin\Debug\Ninject.xml

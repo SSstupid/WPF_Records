@@ -3,7 +3,7 @@ using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Markup;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     public abstract class BaseValueConverter<T> : MarkupExtension, IValueConverter
         where T : class, new()

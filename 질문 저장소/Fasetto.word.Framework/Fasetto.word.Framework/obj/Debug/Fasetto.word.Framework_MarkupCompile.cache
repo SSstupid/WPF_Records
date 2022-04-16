@@ -1,20 +1,20 @@
-﻿Fasetto.word.Framework
+﻿Fasetto.Word.Framework
 
 
 winexe
 C#
 .cs
-C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\
-Fasetto.word.Framework
+C:\Users\rlawo\Documents\GitHub\WPF\질문 저장소\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\
+Fasetto.Word.Framework
 none
 false
 DEBUG;TRACE
-C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\App.xaml
-8694143783
+C:\Users\rlawo\Documents\GitHub\WPF\질문 저장소\Fasetto.word.Framework\Fasetto.word.Framework\App.xaml
+12-1898355750
 18-1310162694
-27566144250
-15803572323
-Page\ChatPage.xaml;Page\LoginPage.xaml;MainWindow.xaml;Style\Buttons.xaml;Style\Colors.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Windows.xaml;
+29-109417859
+17-973565603
+Controls\Chat\ChatListControl.xaml;Controls\Chat\ChatListItemControl.xaml;Controls\SideMenuControl.xaml;Page\ChatPage.xaml;Page\RegisterPage.xaml;Page\LoginPage.xaml;MainWindow.xaml;Style\Buttons.xaml;Style\Colors.xaml;Style\Fonts.xaml;Style\Texts.xaml;Style\Windows.xaml;
 
-False
+True
 

@@ -30,3 +30,15 @@ C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\De
 C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Fasetto.word.Framework_Content.g.cs
 C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Page\ChatPage.g.cs
 C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Page\ChatPage.baml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\SideMenuControl.g.cs
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\SideMenuControl.baml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\Chat\ChatListItemControl.g.cs
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\Chat\ChatListItemControl.baml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\Chat\ChatListControl.g.cs
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Controls\Chat\ChatListControl.baml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Page\RegisterPage.g.cs
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\obj\Debug\Page\RegisterPage.baml
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\bin\Debug\Fasetto.Word.Framework.Core.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\bin\Debug\Fasetto.Word.Framework.Core.pdb
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\bin\Debug\Ninject.dll
+C:\Users\rlawo\source\repos\Fasetto.word.Framework\Fasetto.word.Framework\bin\Debug\Ninject.xml

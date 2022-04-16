@@ -1,4 +1,4 @@
-﻿namespace Fasetto.word.Framework
+﻿namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// Styles of page animations for appearing/disappearing

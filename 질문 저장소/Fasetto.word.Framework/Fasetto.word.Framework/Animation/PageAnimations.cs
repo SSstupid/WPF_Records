@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// Helpers to animate pages in specific ways

@@ -3,7 +3,7 @@ using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Interop;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// The dock position of the window
@@ -155,7 +155,7 @@ namespace Fasetto.word.Framework
             switch (msg)
             {
                 // Handle the GetMinMaxInfo of the Window
-                case 0x0024:/* WM_GETMINMAXINFO */
+                case 0x0024: // WM_GETMINMAXINFO 
                     WmGetMinMaxInfo(hwnd, lParam);
                     handled = true;
                     break;
@@ -187,6 +187,12 @@ namespace Fasetto.word.Framework
             IntPtr lCurrentScreen = MonitorFromPoint(lMousePosition, MonitorOptions.MONITOR_DEFAULTTONEAREST);
 
             MINMAXINFO lMmi = (MINMAXINFO)Marshal.PtrToStructure(lParam, typeof(MINMAXINFO));
+
+            var minSize = new Point(mWindow.MinWidth, mWindow.MinHeight);
+
+            lMmi.ptMinTrackSize.X = (int)minSize.X;
+            lMmi.ptMinTrackSize.Y = (int)minSize.Y;
+
 
             if (lPrimaryScreen.Equals(lCurrentScreen) == true)
             {

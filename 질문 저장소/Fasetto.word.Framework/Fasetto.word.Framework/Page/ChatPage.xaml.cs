@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Fasetto.Word.Framework.Core;
+using System;
 using System.Security;
 using System.Windows;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// ChatPage.xaml에 대한 상호 작용 논리

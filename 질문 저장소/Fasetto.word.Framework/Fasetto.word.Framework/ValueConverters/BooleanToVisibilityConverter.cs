@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Windows;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 { 
     /// <summary>
     /// A converter that takes in a boolean and returns a <see cref="Visibility"/>

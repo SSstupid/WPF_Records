@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Fasetto.Word.Framework.Core;
+using System;
 using System.Diagnostics;
 using System.Globalization;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// Converts the <see cref="ApplicationPage"/> to an actual view/page
@@ -16,7 +17,10 @@ namespace Fasetto.word.Framework
             {
                 case ApplicationPage.Login:
                     return new LoginPage();
-                
+
+                case ApplicationPage.Register:
+                    return new RegisterPage();
+
                 case ApplicationPage.Chat:
                     return new ChatPage();
 

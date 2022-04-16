@@ -1,7 +1,8 @@
 ﻿using System.Windows;
 using System;
+using Fasetto.Word.Framework.Core;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// MainWindow.xaml에 대한 상호 작용 논리
@@ -12,7 +13,7 @@ namespace Fasetto.word.Framework
         {
             InitializeComponent();
 
-            this.DataContext = new WindowViewModel(this);
+            DataContext = new WindowViewModel(this);
         }
     }
 }

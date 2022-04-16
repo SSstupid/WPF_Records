@@ -1,7 +1,8 @@
-﻿using System.Windows;
+﻿using Fasetto.Word.Framework.Core;
+using System.Windows;
 using System.Windows.Input;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// The View Model for the custom flat window
@@ -34,7 +35,7 @@ namespace Fasetto.word.Framework
         /// <summary>
         /// The smallest width the window can go to
         /// </summary>
-        public double WindowMinimumWidth { get; set; } = 400;
+        public double WindowMinimumWidth { get; set; } = 800;
 
         /// <summary>
         /// The smallest height the window can go to
@@ -119,18 +120,7 @@ namespace Fasetto.word.Framework
         /// <summary>
         /// THe height of the title bar / caption of the winodw
         /// </summary>
-        public GridLength TitleHeightGridLenth 
-        {
-            get
-            {
-                { return new GridLength(TitleHeight); }
-            }
-        }
-
-        /// <summary>
-        /// The current page of te application 
-        /// </summary>
-        public ApplicationPage CurrentPage { get; set; } = ApplicationPage.Login;
+        public GridLength TitleHeightGridLenth  => new GridLength(TitleHeight + ResizeBorder);
 
         #endregion
 

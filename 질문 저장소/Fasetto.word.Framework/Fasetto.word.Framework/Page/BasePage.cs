@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Fasetto.Word.Framework.Core;
+using System;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media.Animation;
 
-namespace Fasetto.word.Framework
+namespace Fasetto.Word.Framework
 {
     /// <summary>
     /// A base for all pages to gain base funtionality
@@ -72,7 +73,7 @@ namespace Fasetto.word.Framework
                 this.Visibility = Visibility.Collapsed;
 
             // Listen out for the page loading
-            this.Loaded += BasePage_Loaded;
+            this.Loaded += BasePage_LoadedAsync;
 
             // Create a default view model
             this.DataContext = new VM();
@@ -88,25 +89,27 @@ namespace Fasetto.word.Framework
         /// <param name="sender"></param>
         /// <param name="e"></param>
         /// <exception cref="NotImplementedException"></exception>
-        private void BasePage_Loaded(object sender, RoutedEventArgs e)
+        private async void BasePage_LoadedAsync(object sender, RoutedEventArgs e)
         {
-            AnimateIn();
+            // Animate the page in
+            await AnimateInAsnyc();
         }
 
         /// <summary>
         /// Animates the page in
         /// </summary>
         /// <returns></returns>
-        public async Task AnimateIn()
+        public async Task AnimateInAsnyc()
         {
+           
             // Make sure we have something th do
             if (this.PageLoadAnimation == PageAnimation.None)
                 return;
 
             switch (this.PageLoadAnimation)
-            {
+            { 
                 case PageAnimation.SlideAndFadeInFromRight:
-
+                   
                     // Start the animation
                     this.SlideAndFadeInFromRight(this.SlideSeconds);
 
@@ -118,7 +121,7 @@ namespace Fasetto.word.Framework
         /// Animates the page out
         /// </summary>
         /// <returns></returns>
-        public async Task AnimateOut()
+        public async Task AnimateOutAsync()
         {
             // Make sure we have something th do
             if (this.PageUnloadAnimation == PageAnimation.None)
