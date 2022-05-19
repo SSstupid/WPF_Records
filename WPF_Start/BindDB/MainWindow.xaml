@@ -1,0 +1,33 @@
+﻿<Window x:Class="WPF_Start.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BindDB"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="8,7" VerticalAlignment="Center">성명:</TextBlock>
+        <TextBox x:Name="txtName" Grid.Column="1" Margin="7" Padding="2"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" Margin="8,7" VerticalAlignment="Center">나이:</TextBlock>
+        <TextBox x:Name="txtAge" Grid.Row="1" Grid.Column="1" Margin="7" Padding="2"/>
+
+        <Button x:Name="btnYear" Grid.Row="2" Grid.Column="1" Margin="7" Content="출생년도"
+                Click="btnYear_Click"/>
+        <Button x:Name="btnAddAge" Grid.Row="3" Grid.Column="1" Margin="7" Content="떡국한그릇"
+                Click="btnAddAge_Click"/>
+        <Button x:Name="btnSubAge" Grid.Row="4" Grid.Column="1" Margin="7" Content="떡국뺏기"
+                Click="btnSubAge_Click"/>
+    </Grid>
+</Window>
